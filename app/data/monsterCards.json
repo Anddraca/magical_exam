@@ -10,7 +10,7 @@
     "M002":{
 	"name":"Wolf",
 	"hp":"2",
-	"attack":"3"
+	"attack":"3",
 	"level":"1",
 	"flavorText":"Man's worst friend",
 	"text":""
