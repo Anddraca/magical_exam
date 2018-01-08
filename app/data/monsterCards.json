@@ -1,0 +1,27 @@
+{
+    "M001":{
+    	"hp":"2",
+	"name":"Beast",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"A terrifying beast",
+	"text":""
+    },
+    "M002":{
+	"name":"Wolf",
+	"hp":"2",
+	"attack":"3"
+	"level":"1",
+	"flavorText":"Man's worst friend",
+	"text":""
+    },
+    "M003":{
+	"name":"Vampire",
+	"hp":"15",
+	"attack":"5",
+	"level":"4",
+	"flavorText":"Care for a bite?",
+	"text":"Each time Vampire deals damage, it gains 3 health"
+    }
+
+}
