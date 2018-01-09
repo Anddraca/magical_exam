@@ -16,6 +16,14 @@
 	"text":""
     },
     "M003":{
+	"name":"Snake",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Slippery snake",
+	"text":"After Snake deals damage: Next time you draw a card, take one damage"
+    },
+    "M004":{
 	"name":"Vampire",
 	"hp":"15",
 	"attack":"5",
