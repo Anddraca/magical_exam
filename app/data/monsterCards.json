@@ -1,5 +1,5 @@
 {
-    "M001":{
+    "M101":{
     	"hp":"2",
 	"name":"Beast",
 	"attack":"2",
@@ -7,7 +7,7 @@
 	"flavorText":"A terrifying beast",
 	"text":""
     },
-    "M002":{
+    "M102":{
 	"name":"Wolf",
 	"hp":"2",
 	"attack":"3",
@@ -15,7 +15,7 @@
 	"flavorText":"Man's worst friend",
 	"text":""
     },
-    "M003":{
+    "M103":{
 	"name":"Snake",
 	"hp":"1",
 	"attack":"1",
@@ -23,7 +23,47 @@
 	"flavorText":"Slippery snake",
 	"text":"After Snake deals damage: Next time you draw a card, take one damage"
     },
-    "M004":{
+    "M104":{
+    	"name":"Bats",
+	"hp":"2",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"It's the bats!",
+	"text":"Shriek: Bats' first attack gets +1"
+    },
+    "M105":{
+	"name":"Foot Soldier",
+	"hp":"2",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"Known for his footwork",
+	"text":""	
+    },
+    "M106":{
+    	"name":"Bear",
+	"hp":"2",
+	"attack":"3",
+	"level":"1",
+	"flavorText":"It's a real...something...to deal with",
+	"text":""
+    },
+    "M107":{
+    	"name":"Goblin",
+	"hp":"1",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"Smells worse than you think",
+	"text":"If Goblin lives until end of turn, summon another Goblin"
+    },
+    "M108":{
+    	"name":"Crabula",
+	"hp":"4",
+	"attack":"3",
+	"level":"1",
+	"flavorText":"You've still got Crabula!",
+	"text":"After Crabula attacks, it is reshuffled into the monsters deck"
+    },
+    "M30x":{
 	"name":"Vampire",
 	"hp":"15",
 	"attack":"5",
