@@ -70,7 +70,7 @@
 	"level":"1",
 	"flavorText":"Really, the runt of the demon family",
 	"text":""
-    }
+    },
     "M110":{
     	"name":"Ghost",
 	"hp":"1",
@@ -239,7 +239,7 @@
 	"flavorText":"Step 3: Profit!",
 	"text":"Whenever Distracting Gnome is dealt damage, it deals its attack damage"
     },
-    "M200":{
+    "M201":{
 	"name":"Harpy",
 	"hp":"3",
 	"attack":"3",
@@ -247,7 +247,7 @@
 	"flavorText":"'CRAWW' - Famous Harpy quote",
 	"text":"Harpy deals damage equal to its attack when it enters play"
     },
-    "M201":{
+    "M202":{
 	"name":"Dueling Aristocrat",
 	"hp":"2",
 	"attack":"4",
@@ -255,7 +255,7 @@
 	"flavorText":"'Have at thee!'",
 	"text":"Dueling Aristocrat ignores the first damage dealt to him"
     },
-    "M202":{
+    "M203":{
 	"name":"Enraged Ape",
 	"hp":"4",
 	"attack":"4",
@@ -263,7 +263,7 @@
 	"flavorText":"Shouldn't have taken his bananas",
 	"text":"Enraged Ape takes double damage"
     },
-    "M203":{
+    "M204":{
 	"name":"Skeletal Knight",
 	"hp":"2",
 	"attack":"3",
@@ -271,7 +271,7 @@
 	"flavorText":"Well, more like a skeleton that used to be a knight",
 	"text":"If Skeletal Knight is not the first monster killed this turn, resummon Skeletal Knight at the beginning of the next round"
     },
-    "M204":{
+    "M205":{
 	"name":"Wind Elemental",
 	"hp":"2",
 	"attack":"4",
@@ -279,7 +279,7 @@
 	"flavorText":"Whoosh!",
 	"text":"Damage to Wind Elemental is reduced by 2"
     },
-    "M205":{
+    "M206":{
 	"name":"Ogre",
 	"hp":"4",
 	"attack":"3",
@@ -287,7 +287,7 @@
 	"flavorText":"Smells worse than you think",
 	"text":""
     },
-    "M206":{
+    "M207":{
 	"name":"Wizard's Apprentice",
 	"hp":"3",
 	"attack":"2",
@@ -295,7 +295,7 @@
 	"flavorText":"Not with the broomsticks, but you get the idea",
 	"text":"Enters with 2 counters on it. Remove a counter each turn. When Wizard's Apprentice has no counters on it, deal 5 damage and add 2 counters to it"
     },
-    "M207":{
+    "M208":{
 	"name":"Goliath Arachnid",
 	"hp":"3",
 	"attack":"4",
@@ -303,7 +303,7 @@
 	"flavorText":"They're real. Messed up.",
 	"text":"If Goliath Arachnid was not dealt damage before it attacks, discard a card"
     },
-    "M208":{
+    "M209":{
 	"name":"Drunken Brawler",
 	"hp":"2",
 	"attack":"5",
@@ -311,7 +311,7 @@
 	"flavorText":"'Bleeaaaauuurg'",
 	"text":"Flip a coin. If it is heads, Drunken Brawler deals no damage this round"
     },
-    "M209":{
+    "M210":{
 	"name":"Wailing Wight",
 	"hp":"2",
 	"attack":"3",
@@ -319,7 +319,7 @@
 	"flavorText":"Turn that off!!",
 	"text":"When Wailing Wight enters play, discard a card"
     },
-    "M210":{
+    "M211":{
 	"name":"Angry Sprite",
 	"hp":"2",
 	"attack":"3",
@@ -327,7 +327,7 @@
 	"flavorText":"It's turning red",
 	"text":""
     },
-    "M211":{
+    "M212":{
 	"name":"Bandit",
 	"hp":"2",
 	"attack":"2",
@@ -335,7 +335,7 @@
 	"flavorText":"AKA Scoundrel",
 	"text":"If Bandit is alive at the end of the round, discard a random card. The level of that card is dealt to you as damage"
     },
-    "M212":{
+    "M213":{
 	"name":"Young Drake",
 	"hp":"4",
 	"attack":"3",
@@ -343,7 +343,7 @@
 	"flavorText":"Still learning how to burp fire",
 	"text":"Damage to Young Drake is reduced by 1"
     },
-    "M213":{
+    "M214":{
 	"name":"Giant Leech",
 	"hp":"2",
 	"attack":"2",
@@ -351,7 +351,7 @@
 	"flavorText":"Ew",
 	"text":"If Giant Leech deals damage, it gains +2 health"
     },
-    "M214":{
+    "M215":{
 	"name":"Giant Squid",
 	"hp":"3",
 	"attack":"3",
@@ -359,6 +359,39 @@
 	"flavorText":"Really, they're huge",
 	"text":"If Giant Squid is undamaged at the end of the round, shuffle it back into the monster deck"
     },
+    "M216":{
+	"name":"Dark Acolyte",
+	"hp":"2",
+	"attack":"2",
+	"level":"2",
+	"flavorText":"A preferred title to Emo Acolyte",
+	"text":"Add a counter to Dark Acolyte. When Dark Acolyte has 5 counters, deal 8 damage to player and remove all counters"
+    },
+    "M217":{
+	"name":"Crazed Prophet",
+	"hp":"1",
+	"attack":"1",
+	"level":"2",
+	"flavorText":"He's got a big number 9 on his smock",
+	"text":"Add a counter to Crazed Prophet. When Crazed Prophet has 3 counters, discard your hand and remove all counters"
+    },
+    "M218":{
+	"name":"Orc",
+	"hp":"3",
+	"attack":"3",
+	"level":"2",
+	"flavorText":"Big teeth and all",
+	"text":"Orc has +1 attack for every damage it's taken"
+    },
+    "M219":{
+	"name":"Upgraded Construct",
+	"hp":"4",
+	"attack":"2",
+	"level":"2",
+	"flavorText":"Upgrade!",
+	"text":""
+    },
+    
     "M30x":{
 	"name":"Vampire",
 	"hp":"15",
