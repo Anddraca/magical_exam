@@ -63,6 +63,190 @@
 	"flavorText":"You've still got Crabula!",
 	"text":"After Crabula attacks, it is reshuffled into the monsters deck"
     },
+    "M109":{
+    	"name":"Imp",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Really, the runt of the demon family",
+	"text":""
+    }
+    "M110":{
+    	"name":"Ghost",
+	"hp":"1",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"Not exactly friendly, you know?",
+	"text":"Reduce damage dealt to Ghost by 1"
+    },
+    "M111":{
+    	"name":"Zombie",
+	"hp":"4",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Braaaaains",
+	"text":"When Zombie deals damage, something happens"
+    },
+    "M112":{
+    	"name":"Skeleton",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Classic",
+	"text":"As long as Skeleton is on the board, whenever a non-Skeleton is killed, summon a Skeleton"
+    },
+    "M113":{
+    	"name":"Scorpion",
+	"hp":"2",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"Check yer boots!",
+	"text":"After Scorpion deals damage, take 1 damage every turn that Scorpion remains on the board"
+    },
+    "M114":{
+    	"name":"Boar",
+	"hp":"2",
+	"attack":"3",
+	"level":"1",
+	"flavorText":"Killer of kings",
+	"text":""
+    },
+    "M115":{
+	"name":"Crystal Elemental",
+	"hp":"1",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"",
+	"text":"When Crystal Elemental is killed, it deals 1 damage"
+    },
+    "M116":{
+	"name":"Rats",
+	"hp":"2",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Rats!",
+	"text":""
+    },
+    "M117":{
+	"name":"Dark Fairy",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Tough to see at night",
+	"text":"When damage would be dealt to Dark Fairy, flip a coin. If it is tails, damage to Dark Fairy is ignored."
+    },
+    "M118":{
+	"name":"Poor Trickster",
+	"hp":"2",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Poor like bad, he's actually inherited quite a bit of money.",
+	"text":"Poor Trickster is immune to all damage the turn he appears"
+    },
+    "M119":{
+	"name":"Cowardly Commander",
+	"hp":"3",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Oh look, he actually is quivering in his boots",
+	"text":"Cowardly Commander has +1 attack for every other Level 1 creature on the board"
+    },
+    "M120":{
+	"name":"Thrall",
+	"hp":"2",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"You might say he's enTHRALLed. Right?",
+	"text":"Thrall has +1 attack if there is also a Level 2 monster on the board"
+    },
+    "M121":{
+	"name":"Crumbling Golem",
+	"hp":"2",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"That's the way the golem crumbles",
+	"text":"When Crubmling Golem dies, deal 1 damage to the creature to his left"
+    },
+    "M122":{
+	"name":"Minor Demon",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Sounds creepier than a Major Demon, if you ask me",
+	"text":"Has +1/+1 for every other demon on the board"
+    },
+    "M123":{
+	"name":"Auto-Xbow",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"The latest in death machine technology",
+	"text":"Auto-Xbow deals 1 damage the turn it enters play"
+    },
+    "M124":{
+	"name":"Rusty Construct",
+	"hp":"2",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Used to be Shiny New Construct, but time makes fools of us all",
+	"text":""
+    },
+    "M125":{
+	"name":"Falcon",
+	"hp":"1",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"Not to be confused with Falcor",
+	"text":"Falcon has +1 attack if it has attacked more than once"
+    },
+    "M126":{
+	"name":"Dragonling",
+	"hp":"4",
+	"attack":"2",
+	"level":"1",
+	"flavorText":"He's just a little guy",
+	"text":"Fire Belch: Every turn, add a counter to Dragonling. When he has 3 counters, deal 3 damage and remove all tokens"
+    },
+    "M127":{
+	"name":"Fading Shade",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"He has an infomercial",
+	"text":"Damage to Fading Shade is reduced by 2"
+    },
+    "M128":{
+	"name":"Toxic Sponge",
+	"hp":"1",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"His pants are not square",
+	"text":"After Toxic Sponge deals damage, take 1 damage per turn until it dies"
+    },
+    "M129":{
+	"name":"Cloud of Gnats",
+	"hp":"2",
+	"attack":"0",
+	"level":"1",
+	"flavorText":"Ack! Pfth!",
+	"text":"While Cloud of Gnats is on the board, reduce all damage dealt by player by 1"
+    },
+    "M130":{
+	"name":"Distracting Gnome",
+	"hp":"2",
+	"attack":"1",
+	"level":"1",
+	"flavorText":"Step 3: Profit!",
+	"text":"Whenever Distracting Gnome is dealt damage, it deals its attack damage"
+    },
+    "M200":{
+	"name":"",
+	"hp":"",
+	"attack":"",
+	"level":"2",
+	"flavorText":"",
+	"text":""
+    },
     "M30x":{
 	"name":"Vampire",
 	"hp":"15",
