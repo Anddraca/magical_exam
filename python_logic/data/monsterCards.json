@@ -390,15 +390,70 @@
 	"level":"2",
 	"flavorText":"Upgrade!",
 	"text":""
+    }, 
+    "M220":{
+	"name":"Phantom",
+	"hp":"3",
+	"attack":"4",
+	"level":"2",
+	"flavorText":"How...menacing...",
+	"text":"Every time Phantom deals damage, destroy another monster and gain +1 attack"
+    }, 
+    "M221":{
+	"name":"Cyclops",
+	"hp":"4",
+	"attack":"3",
+	"level":"2",
+	"flavorText":"Pink eye is the worst if you're a cyclops",
+	"text":""
     },
-    
-    "M30x":{
+    "M222":{
+	"name":"Scruffy",
+	"hp":"5",
+	"attack":"2",
+	"level":"2",
+	"flavorText":"What nightmare hath torn this company in twain?",
+	"text":"If Scruffy was not damaged during a round, he naps for a round"
+    }, 
+    "M223":{
+	"name":"Shade",
+	"hp":"2",
+	"attack":"4",
+	"level":"2",
+	"flavorText":"He gets thrown around a lot",
+	"text":""
+    },
+    "M224":{
+	"name":"Golem",
+	"hp":"5",
+	"attack":"3",
+	"level":"2",
+	"flavorText":"He was going after a ring, but he was a few letters off",
+	"text":""
+    }, 
+    "M225":{
+	"name":"Tangling Vine",
+	"hp":"3",
+	"attack":"2",
+	"level":"2",
+	"flavorText":"",
+	"text":"If Tangling Vine deals damage, discard a random card"
+    },
+    "M301":{
 	"name":"Vampire",
-	"hp":"15",
+	"hp":"10",
 	"attack":"5",
-	"level":"4",
+	"level":"3",
 	"flavorText":"Care for a bite?",
 	"text":"Each time Vampire deals damage, it gains 3 health"
-    }
+    },
+    "M302":{
+    	"name":"",
+	"hp":"",
+	"attack":"",
+	"level":"",
+	"flavorText":"",
+	"text":""
+    },
 
 }
