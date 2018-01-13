@@ -448,6 +448,118 @@
 	"text":"Each time Vampire deals damage, it gains 3 health"
     },
     "M302":{
+    	"name":"Lich",
+	"hp":"5",
+	"attack":"4",
+	"level":"3",
+	"flavorText":"Very different from the leech",
+	"text":"Lich can only be damaged if there are no Level 1 monsters in play"
+    },
+    "M303":{
+    	"name":"Poison Cloud",
+	"hp":"4",
+	"attack":"2",
+	"level":"3",
+	"flavorText":"Hold your breath",
+	"text":"Damage to Poison Cloud is halved. Every turn Poison Cloud is in play, you take 2 damage"
+    },
+    "M304":{
+    	"name":"Centaur",
+	"hp":"8",
+	"attack":"5",
+	"level":"3",
+	"flavorText":"He's real mad",
+	"text":""
+    },
+    "M305":{
+    	"name":"Griffin",
+	"hp":"8",
+	"attack":"4",
+	"level":"3",
+	"flavorText":"Does he caw or roar?",
+	"text":"Griffin deals damage equal to its attack when it enters play"
+    },
+    "M306":{
+    	"name":"Tar Beast",
+	"hp":"7",
+	"attack":"3",
+	"level":"3",
+	"flavorText":"He's TOO goopy!",
+	"text":"The first time damage is dealt to Tar Beast each turn, it is ignored"
+    },
+    "M307":{
+    	"name":"Silver Golem",
+	"hp":"10",
+	"attack":"5",
+	"level":"3",
+	"flavorText":"He's so shiny",
+	"text":""
+    },
+    "M308":{
+    	"name":"Slime",
+	"hp":"8",
+	"attack":"4",
+	"level":"3",
+	"flavorText":"Makes a lot of gross sounds when it moves",
+	"text":"When Slime dies, it deals 3 damage to you"
+    },
+    "M309":{
+    	"name":"Adept",
+	"hp":"5",
+	"attack":"6",
+	"level":"3",
+	"flavorText":"He's sort of okay, better than an apprentice, anyway",
+	"text":"Every time Adept deals damage, flip a coin. If it is heads, Adept deals 3 additional damage"
+    },
+    "M310":{
+    	"name":"Goblin King",
+	"hp":"9",
+	"attack":"4",
+	"level":"3",
+	"flavorText":"He's not as tough as he looks. But he is as smelly as you'd think",
+	"text":"If Goblin King is damaged but not killed, summon a 2/1 goblin"
+    },
+    "M311":{
+    	"name":"Assassin",
+	"hp":"3",
+	"attack":"7",
+	"level":"3",
+	"flavorText":"What an ass. Twice over, right?",
+	"text":"Assassin cannot be targeted until after he deals damage"
+    },
+    "M312":{
+    	"name":"Dark Knight",
+	"hp":"11",
+	"attack":"6",
+	"level":"3",
+	"flavorText":"Dark refers to his personality",
+	"text":""
+    },
+    "M313":{
+    	"name":"Dark Elf",
+	"hp":"8",
+	"attack":"6",
+	"level":"3",
+	"flavorText":"Dark refers to his personality. And also his robes. And his eyes...",
+	"text":"Dark Elf has +2 attack if he's the only Level 3 monster on the board"
+    },
+    "M314":{
+    	"name":"Water Elemental",
+	"hp":"8",
+	"attack":"3",
+	"level":"3",
+	"flavorText":"If it were really hot, it would be a steam elemental",
+	"text":"Damage to Water Elemental is reduced by 2"
+    },
+    "M315":{
+    	"name":"Basilisk",
+	"hp":"9",
+	"attack":"5",
+	"level":"3",
+	"flavorText":"Don't worry, you're not a Horcrux",
+	"text":"If you're damaged by Basilisk, take 1 damage every time you play a card until Basilisk dies"
+    },
+    "M302":{
     	"name":"",
 	"hp":"",
 	"attack":"",
@@ -455,5 +567,4 @@
 	"flavorText":"",
 	"text":""
     },
-
 }
