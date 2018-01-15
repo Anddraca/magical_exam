@@ -559,11 +559,243 @@
 	"flavorText":"Don't worry, you're not a Horcrux",
 	"text":"If you're damaged by Basilisk, take 1 damage every time you play a card until Basilisk dies"
     },
-    "M302":{
-    	"name":"",
-	"hp":"",
-	"attack":"",
-	"level":"",
+    "M316":{
+    	"name":"Animated Armor",
+	"hp":"10",
+	"attack":"4",
+	"level":"3",
+	"flavorText":"",
+	"text":"Animated Armor has damaged reduced by 2"
+    },
+    "M317":{
+    	"name":"Big Snake",
+	"hp":"7",
+	"attack":"6",
+	"level":"3",
+	"flavorText":"",
+	"text":"If you are damaged by Big Snake, the next three times you draw a card, take one damage"
+    },
+    "M318":{
+    	"name":"Beholder",
+	"hp":"6",
+	"attack":"4",
+	"level":"3",
+	"flavorText":"Pick an eye to look at",
+	"text":"If you are damaged by Beholder, skip your next two draws"
+    },
+    "M319":{
+    	"name":"Naga",
+	"hp":"9",
+	"attack":"7",
+	"level":"3",
+	"flavorText":"",
+	"text":""
+    },
+    "M320":{
+    	"name":"Troll",
+	"hp":"10",
+	"attack":"5",
+	"level":"3",
+	"flavorText":"",
+	"text":"Troll heals 2 damage at the end of every round"
+    },
+    "M401":{
+    	"name":"Dragon",
+	"hp":"15",
+	"attack":"10",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M402":{
+    	"name":"Wizard",
+	"hp":"8",
+	"attack":"6",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M403":{
+    	"name":"Demon",
+	"hp":"13",
+	"attack":"9",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M404":{
+    	"name":"Leviathin",
+	"hp":"12",
+	"attack":"8",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M405":{
+    	"name":"Commander",
+	"hp":"8",
+	"attack":"8",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M406":{
+    	"name":"Ancient One",
+	"hp":"15",
+	"attack":"9",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M407":{
+    	"name":"Gold Golem",
+	"hp":"14",
+	"attack":"8",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M408":{
+    	"name":"Advanced Construct",
+	"hp":"12",
+	"attack":"7",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M409":{
+    	"name":"Doom Warden",
+	"hp":"10",
+	"attack":"6",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M410":{
+    	"name":"Necromancer",
+	"hp":"7",
+	"attack":"5",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M411":{
+    	"name":"Minotaur",
+	"hp":"14",
+	"attack":"9",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M412":{
+    	"name":"Killer Wasps",
+	"hp":"6",
+	"attack":"7",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M413":{
+    	"name":"Morphing Goo",
+	"hp":"10",
+	"attack":"8",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M414":{
+    	"name":"Earth Elemental",
+	"hp":"18",
+	"attack":"5",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M415":{
+    	"name":"Mistform",
+	"hp":"6",
+	"attack":"6",
+	"level":"4",
+	"flavorText":"",
+	"text":""
+    },
+    "M501":{
+    	"name":"Malicious Deity Avatar",
+	"hp":"22",
+	"attack":"10",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M502":{
+    	"name":"Archmage",
+	"hp":"10",
+	"attack":"6",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M503":{
+    	"name":"Champion",
+	"hp":"20",
+	"attack":"10",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M504":{
+    	"name":"Elder Dragon",
+	"hp":"25",
+	"attack":"10",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M505":{
+    	"name":"Death Knight",
+	"hp":"20",
+	"attack":"14",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M506":{
+    	"name":"Chimera",
+	"hp":"23",
+	"attack":"8",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M507":{
+    	"name":"Archlich",
+	"hp":"15",
+	"attack":"12",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M508":{
+    	"name":"Platinum Golem",
+	"hp":"22",
+	"attack":"15",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M509":{
+    	"name":"Perfected Construct",
+	"hp":"25",
+	"attack":"15",
+	"level":"5",
+	"flavorText":"",
+	"text":""
+    },
+    "M510":{
+    	"name":"Gatekeeper",
+	"hp":"7",
+	"attack":"3",
+	"level":"5",
 	"flavorText":"",
 	"text":""
     },
