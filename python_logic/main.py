@@ -32,6 +32,16 @@ class Card:
         card_info = monsters_parsed[id]
         return card_info
 
+
+class MonsterCard(Card):
+    """
+    Adds HP and Attack values
+    """
+
+    attack = ""
+    hp = ""
+
+
 # test out the thing:
 
 users_id = input("ID of card you want to check out:")
@@ -39,5 +49,7 @@ users_id = input("ID of card you want to check out:")
 new_card = Card()
 
 this_card_info = new_card.get_info_by_id(users_id)
+formatted_info = "Name: " + this_card_info['name'] + "\nHP: " + this_card_info['hp'] + "\nAttack: " + this_card_info['attack'] + "\nLevel: " + this_card_info['level'] + "\nFlavor Text: " + this_card_info['flavorText'] + "\nText: " + this_card_info['text']
 
-print(this_card_info)
+
+print(formatted_info)
