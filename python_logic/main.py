@@ -8,9 +8,10 @@ Author: Tom Anderson
 """
 
 import json
+import re
 # get the card data
 monsters_parsed = json.load(open('data/monsterCards.json'))
-
+spells_parsed = json.load(open('data/spellCards.json'))
 # print(monsters_parsed)
 
 # define a generic card class:
@@ -31,6 +32,24 @@ class Card:
     def get_info_by_id(self, id):
         try:
             card_info = monsters_parsed[id]
+            return card_info
+        except KeyError:
+            print("Not a valid ID, please try again")
+            return None
+
+
+def get_info_by_id(id, type):
+    if(type == "M"):
+        try:
+            card_info = monsters_parsed[id]
+            return card_info
+        except KeyError:
+            print("Not a valid ID, please try again")
+            return None
+
+    if(type == "S"):
+        try:
+            card_info = spells_parsed[id]
             return card_info
         except KeyError:
             print("Not a valid ID, please try again")
@@ -58,17 +77,32 @@ class playerHand:
 # test out the thing:
 
 print("Enter q to quit")
-command = input("What would you like to do next?")
+command = input("What would you like to do next? \n")
 
 def handle_commands(command):
-    if(command == "M101"):
-        print("That is card M101")
+    # check for what type of card it is.
+    # if M###, it's a monster card:
+    m = re.search("M\d\d\d", command)
+    card_check_type = ""
+
+    if(m is not None):
+        card_check_type = "M"
+
+    # if S###, it's a spell card:
+    s = re.search("S\d\d\d", command)
+    if(s is not None):
+        card_check_type = "S"
+   
+    if(card_check_type is not ""):
+        print(get_info_by_id(command, card_check_type))
+    elif(command == "help" or command == "Help" or command == "h"):
+        print("Type q to quit \n")
     else:
         print("Command not recognized, please try again")
 
 while command != "q":
     handle_commands(command)
-    command = input("What would you like to do next?")
+    command = input("What would you like to do next? \n")
 
 # users_id = input("ID of card you want to check out:")
 
