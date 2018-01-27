@@ -9,6 +9,9 @@ Author: Tom Anderson
 
 import json
 import re
+
+import game_loop
+
 # get the card data
 monsters_parsed = json.load(open('data/monsterCards.json'))
 spells_parsed = json.load(open('data/spellCards.json'))
