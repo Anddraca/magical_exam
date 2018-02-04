@@ -77,6 +77,23 @@ class playerHand:
     def add_to_hand(self, id):
         self.cards_in_hand.append(id)
 
+class Stack:
+    cards_in_stack = []
+    level_of_stack = 0
+    
+    def number_of_cards(self, stack):
+        return len(stack)
+
+    # shuffle function will be in util functions
+
+class MonsterStack(Stack):
+    number_of_defeated = 0
+
+
+class SpellStack(Stack):
+    school = ""
+
+
 # test out the thing:
 
 print("Enter q to quit")
