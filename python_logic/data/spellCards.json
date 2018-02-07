@@ -1,8 +1,14 @@
 {
-	"S001": {
-		"name":"Fireball",
-		"level":"3",
-		"type":"",
-		"text":""
+	"SS01": {
+		"name":"Summon Rats",
+		"level":"1",
+		"type":"Summon",
+		"text":"Summon a horde of rats with 3 attack and 1 health"
+	},
+	"SS02":{
+		"name":"Summon Imp",
+		"level":"1",
+		"type":"Summon"
+		"text":"Summon an Imp with 1/2"
 	}
 }

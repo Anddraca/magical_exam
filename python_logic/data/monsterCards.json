@@ -21,7 +21,7 @@
 	"attack":"1",
 	"level":"1",
 	"flavorText":"Slippery snake",
-	"text":"After Snake deals damage: Next time you draw a card, take one damage"
+	"text":"After Snake deals damage: Next time you cast a spell, take one damage"
     },
     "M104":{
     	"name":"Bats",
@@ -301,7 +301,7 @@
 	"attack":"4",
 	"level":"2",
 	"flavorText":"They're real. Messed up.",
-	"text":"If Goliath Arachnid was not dealt damage before it attacks, discard a card"
+	"text":"If Goliath Arachnid was not dealt damage before it attacks, re-learn a level 1 spell"
     },
     "M209":{
 	"name":"Drunken Brawler",
@@ -317,7 +317,7 @@
 	"attack":"3",
 	"level":"2",
 	"flavorText":"Turn that off!!",
-	"text":"When Wailing Wight enters play, discard a card"
+	"text":"When Wailing Wight enters play, re-learn a level 2 spell"
     },
     "M211":{
 	"name":"Angry Sprite",
@@ -333,7 +333,7 @@
 	"attack":"2",
 	"level":"2",
 	"flavorText":"AKA Scoundrel",
-	"text":"If Bandit is alive at the end of the round, discard a random card. The level of that card is dealt to you as damage"
+	"text":"If Bandit is alive at the end of the round, re-learn a random level 1 spell. The level of that card is dealt to you as damage"
     },
     "M213":{
 	"name":"Young Drake",
@@ -437,7 +437,7 @@
 	"attack":"2",
 	"level":"2",
 	"flavorText":"",
-	"text":"If Tangling Vine deals damage, discard a random card"
+	"text":"If Tangling Vine deals damage, re-learn a level 1 spell"
     },
     "M301":{
 	"name":"Vampire",
@@ -557,7 +557,7 @@
 	"attack":"5",
 	"level":"3",
 	"flavorText":"Don't worry, you're not a Horcrux",
-	"text":"If you're damaged by Basilisk, take 1 damage every time you play a card until Basilisk dies"
+	"text":"If you're damaged by Basilisk, take 1 damage every time you cast a spell until Basilisk dies"
     },
     "M316":{
     	"name":"Animated Armor",
@@ -573,7 +573,7 @@
 	"attack":"6",
 	"level":"3",
 	"flavorText":"",
-	"text":"If you are damaged by Big Snake, the next three times you draw a card, take one damage"
+	"text":"If you are damaged by Big Snake, the next three times you cast a spell, take one damage"
     },
     "M318":{
     	"name":"Beholder",
@@ -581,7 +581,7 @@
 	"attack":"4",
 	"level":"3",
 	"flavorText":"Pick an eye to look at",
-	"text":"If you are damaged by Beholder, skip your next two draws"
+	"text":"If you are damaged by Beholder, "
     },
     "M319":{
     	"name":"Naga",

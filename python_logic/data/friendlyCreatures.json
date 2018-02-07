@@ -1,0 +1,7 @@
+{
+	"FC01": {
+		"name":"Rats",
+		"health": "1",
+		"attack":"3"
+	}
+}
