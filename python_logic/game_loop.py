@@ -9,7 +9,7 @@ import util_functions
 class game_loop:
     def start_game():
         print("Enter q to quit")
-        command = input("What would you like to do next?" \n)
+        command = input("What would you like to do next? \n")
 
     def handle_commands(command):
         # check if it's a card search

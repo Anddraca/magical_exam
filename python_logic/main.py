@@ -11,6 +11,7 @@ import json
 import re
 
 import game_loop
+from card import Card
 
 # get the card data
 monsters_parsed = json.load(open('data/monsterCards.json'))
@@ -19,26 +20,26 @@ spells_parsed = json.load(open('data/spellCards.json'))
 
 # define a generic card class:
 
-class Card:
-    """
-    Define generic card:
+# class Card:
+#    """
+ #   Define generic card:
 
-    Type: String - Monster or Spell
-    ID: String - the ID of the card
-    Name: String - Name of the card
-    """
+  #  Type: String - Monster or Spell
+   # ID: String - the ID of the card
+   # Name: String - Name of the card
+   # """
 
-    type = ""
-    id = ""
-    name = ""
+  #  type = ""
+   # id = ""
+   # name = ""
 
-    def get_info_by_id(self, id):
-        try:
-            card_info = monsters_parsed[id]
-            return card_info
-        except KeyError:
-            print("Not a valid ID, please try again")
-            return None
+   # def get_info_by_id(self, id):
+    #    try:
+     #       card_info = monsters_parsed[id]
+      #      return card_info
+      #  except KeyError:
+       #     print("Not a valid ID, please try again")
+        #    return None
 
 
 def get_info_by_id(id, type):
@@ -93,6 +94,10 @@ class MonsterStack(Stack):
 class SpellStack(Stack):
     school = ""
 
+# test card class:
+someCard = Card
+someCard.getProperties("M101")
+print(someCard.properties)
 
 # test out the thing:
 

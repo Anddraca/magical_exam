@@ -8,7 +8,7 @@
 	"SS02":{
 		"name":"Summon Imp",
 		"level":"1",
-		"type":"Summon"
+		"type":"Summon",
 		"text":"Summon an Imp with 1/2"
 	}
 }
