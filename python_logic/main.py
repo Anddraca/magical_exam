@@ -11,6 +11,7 @@ import json
 import re
 
 import game_loop
+from printing import PrintThings
 from card import Card
 
 # get the card data
@@ -100,7 +101,7 @@ someCard.getProperties("M101")
 print(someCard.properties)
 
 # test out the thing:
-
+PrintThings.printWelcome()
 print("Enter q to quit")
 command = input("What would you like to do next? \n")
 
