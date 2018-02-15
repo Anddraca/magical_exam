@@ -82,7 +82,7 @@ class playerHand:
 class Stack:
     cards_in_stack = []
     level_of_stack = 0
-    
+
     def number_of_cards(self, stack):
         return len(stack)
 
@@ -107,6 +107,10 @@ command = input("What would you like to do next? \n")
 
 def handle_commands(command):
     # check for what type of card it is.
+    view = re.search("view", command)
+    if(view is not None):
+        print("That's a view!")
+
     # if M###, it's a monster card:
     m = re.search("M\d\d\d", command)
     card_check_type = ""
@@ -118,7 +122,7 @@ def handle_commands(command):
     s = re.search("S\d\d\d", command)
     if(s is not None):
         card_check_type = "S"
-   
+
     if(card_check_type is not ""):
         print(get_info_by_id(command, card_check_type))
     elif(command == "help" or command == "Help" or command == "h"):

@@ -12,9 +12,18 @@ class game_loop:
         command = input("What would you like to do next? \n")
 
     def handle_commands(command):
+        """
+        The available commands include:
+            view [stuff]
+                stuff can be card_id, board, monsters, monster deck, status
+                (status is for state of the game: player life, etc)
+            play [spell]
+                name of spell to play
+
+        """
         # check if it's a card search
         # check what kind of card it is
-        
+
         # if M###, it's a monster card:
         m = re.search("M\d\d\d", command)
         card_check_type = ""
