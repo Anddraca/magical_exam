@@ -7,11 +7,11 @@ import re
 import util_functions
 
 class game_loop:
-    def start_game():
+    def start_game(self):
         print("Enter q to quit")
         command = input("What would you like to do next? \n")
 
-    def handle_commands(command):
+    def handle_commands(self, command):
         """
         The available commands include:
             view [stuff]

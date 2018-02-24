@@ -13,35 +13,11 @@ import re
 import game_loop
 from printing import PrintThings
 from card import Card
+from spell_grid import Stack
 
 # get the card data
 monsters_parsed = json.load(open('data/monsterCards.json'))
 spells_parsed = json.load(open('data/spellCards.json'))
-# print(monsters_parsed)
-
-# define a generic card class:
-
-# class Card:
-#    """
- #   Define generic card:
-
-  #  Type: String - Monster or Spell
-   # ID: String - the ID of the card
-   # Name: String - Name of the card
-   # """
-
-  #  type = ""
-   # id = ""
-   # name = ""
-
-   # def get_info_by_id(self, id):
-    #    try:
-     #       card_info = monsters_parsed[id]
-      #      return card_info
-      #  except KeyError:
-       #     print("Not a valid ID, please try again")
-        #    return None
-
 
 def get_info_by_id(id, type):
     if(type == "M"):
@@ -69,24 +45,19 @@ class MonsterCard(Card):
     attack = ""
     hp = ""
 
-class playerHand:
+class AvailableCards:
     """
     is a list of cards (by id) in the player's hand
     """
 
-    cards_in_hand = []
+    cards_available = []
 
-    def add_to_hand(self, id):
-        self.cards_in_hand.append(id)
+    def add_to_available_cards(self, stack_pos):
+        # 
+        pass
 
-class Stack:
-    cards_in_stack = []
-    level_of_stack = 0
-
-    def number_of_cards(self, stack):
-        return len(stack)
-
-    # shuffle function will be in util functions
+    def list_available_cards(self):
+        return self.cards_available
 
 class MonsterStack(Stack):
     number_of_defeated = 0
@@ -94,11 +65,6 @@ class MonsterStack(Stack):
 
 class SpellStack(Stack):
     school = ""
-
-# test card class:
-someCard = Card
-someCard.getProperties("M101")
-print(someCard.properties)
 
 # test out the thing:
 PrintThings.printWelcome()

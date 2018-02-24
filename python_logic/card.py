@@ -12,7 +12,7 @@ class Card:
     id = ""
     properties = {}
 
-    def getProperties(id):
+    def getProperties(self, id):
         # get the card data from the json
         if(id.startswith("M")):
             try:
