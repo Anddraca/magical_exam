@@ -1,14 +1,232 @@
 {
-	"SS01": {
-		"name":"Summon Rats",
-		"level":"1",
-		"type":"Summon",
-		"text":"Summon a horde of rats with 3 attack and 1 health"
+	"destruct": {
+		"L1": {
+			"L1D1": {
+				"name": "Bruise"
+			},
+			"L1D2": {
+				"name": "Slash"
+			},
+			"L1D3": {
+				"name": "Bolt"
+			},
+			"L1D4": {
+				"name": "Magic Missile"
+			},
+			"L1D5": {
+				"name": "Cone of Cold"
+			}
+		},
+		"L2": {
+			"L2D1": {
+				"name": "Poison"
+			},
+			"L2D2": {
+				"name": "Harm"
+			},
+			"L2D3": {
+				"name": "Decay"
+			},
+			"L2D4": {
+				"name": "Shock"
+			}
+		},
+		"L3": {
+			"L3D1": {
+				"name": "Lightning"
+			},
+			"L3D2": {
+				"name": "Fireball"
+			},
+			"L3D3": {
+				"name": "Stone Storm"
+			}
+		},
+		"L4": {
+			"L4D1": {
+				"name": "Disk of Destruction"
+			},
+			"L4D2": {
+				"name": "Conflagration"
+			}
+		},
+		"L5": {
+			"L5D1": {
+				"name": "Meteor"
+			}
+		}
 	},
-	"SS02":{
-		"name":"Summon Imp",
-		"level":"1",
-		"type":"Summon",
-		"text":"Summon an Imp with 1/2"
+	"construct": {
+		"L1": {
+			"L1C1": {
+				"name": "Rusty Turret"
+			},
+			"L1C2": {
+				"name": "Anvil"
+			},
+			"L1C3": {
+				"name": "Sentry Bot"
+			},
+			"L1C4": {
+				"name": "Internal Combustion"
+			},
+			"L1C5": {
+				"name": "Malfunctioning Guardian"
+			}
+		},
+		"L2": {
+			"L2C1": {
+				"name": "Automaton"
+			},
+			"L2C2": {
+				"name": "Summon Sword"
+			},
+			"L2C3": {
+				"name": "Quick Shot"
+			},
+			"L2C4": {
+				"name": "Empty Hull"
+			}
+		},
+		"L3": {
+			"L3C1": {
+				"name": "Repair Bay"
+			},
+			"L3C2": {
+				"name": "Ray of Destruction"
+			},
+			"L3C3": {
+				"name": "Perimeter Patrol"
+			}
+		},
+		"L4": {
+			"L4C1": {
+				"name": "Dome"
+			},
+			"L4C2": {
+				"name": "Factory"
+			}
+		},
+		"L5": {
+			"L5C1": {
+				"name": "Engine of Destruction"
+			}
+		}
+	},
+	"summon": {
+		"L1": {
+			"L1S1": {
+				"name": "Summon Rats",
+				"text":"Summon a horde of rats with 3 attack and 1 health"
+			},
+			"L1S2": {
+				"name": "Summon Imp",
+				"text":"Summon an Imp with 1/2"
+			},
+			"L1S3": {
+				"name": "Summon Vines"
+			},
+			"L1S4": {
+				"name": "Summon Guard Dog"
+			},
+			"L1S5": {
+				"name": "Summon Eagle"
+			}
+		},
+		"L2": {
+			"L2S1": {
+				"name": "Summon Light Elemental"
+			},
+			"L2S2": {
+				"name": "Summon Spiders"
+			},
+			"L2S3": {
+				"name": "Wall"
+			},
+			"L2S4": {
+				"name": "Summon Warden"
+			}
+		},
+		"L3": {
+			"L3S1": {
+				"name": "Bulwark"
+			},
+			"L3S2": {
+				"name": "Summon Familiar"
+			},
+			"L3S3": {
+				"name": "Summon Gryphon"
+			}
+		},
+		"L4": {
+			"L4S1": {
+				"name": "Summon Champion"
+			},
+			"L4S2": {
+				"name": "Summon Giant"
+			}
+		},
+		"L5": {
+			"L5S1": {
+				"name": "Summon Dragon"
+			}
+		}
+	},
+	"illusion": {
+		"L1": {
+			"L1I1": {
+				"name": "Levitate"
+			},
+			"L1I2": {
+				"name": "Hunger"
+			},
+			"L1I3": {
+				"name": "Whispers"
+			},
+			"L1I4": {
+				"name": "Freeze"
+			},
+			"L1I5": {
+				"name": "Tangling Web"
+			}
+		},
+		"L2": {
+			"L2I1": {
+				"name": "Confusion"
+			},
+			"L2I2": {
+				"name": "Enfeeble"
+			},
+			"L2I3": {
+				"name": "Haste"
+			},
+			"L1I4": {
+				"name": "Melt"
+			}
+		},
+		"L3": {
+			"L3I1": {
+				"name": "Sleep"
+			},
+			"L3I2": {
+				"name": "Gigantism"
+			},
+			"L3I3": {
+				"name": "Rage"
+			}
+		},
+		"L4": {
+			"L4I1": {
+				"name": "Displacement"
+			},
+			"L4I2": {
+				"name": "Flash"
+			}
+		},
+		"L5": {
+			"L5I1": {
+				"name": "Banish"
+			}
+		}
 	}
 }

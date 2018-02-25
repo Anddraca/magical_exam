@@ -4,9 +4,11 @@ Put the command line came loop in here
 
 import re
 
-from util_functions import UtilFunctions as utils
+from util_functions import UtilFunctions
 
 class GameLoop:
+    utils = UtilFunctions()
+
     def __init__(self):
         pass
 
@@ -18,23 +20,11 @@ class GameLoop:
     def handle_commands(self, command):
         # check for what type of card it is.
         view = re.search("view", command)
-        if(view is not None):
-            print("That's a view!")
 
-        # if M###, it's a monster card:
-        m = re.search("M\d\d\d", command)
-        card_check_type = ""
-
-        if(m is not None):
-            card_check_type = "M"
-
-        # if S###, it's a spell card:
-        s = re.search("S\d\d\d", command)
-        if(s is not None):
-            card_check_type = "S"
-
-        if(card_check_type is not ""):
-            print(utils.get_info_by_id(self, command, card_check_type))
+        if(view):
+            # strip off "view"
+            id = command[5:]
+            print(self.utils.get_info_by_id(id))
         elif(command == "help" or command == "Help" or command == "h"):
             print("Type q to quit \n")
         else:
