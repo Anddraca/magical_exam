@@ -10,31 +10,15 @@ Author: Tom Anderson
 import json
 import re
 
-import game_loop
+from game_loop import GameLoop
 from printing import PrintThings
 from card import Card
-from spell_grid import Stack
+from spell_grid import Stack, SpellGridColumn
 
 # get the card data
 monsters_parsed = json.load(open('data/monsterCards.json'))
 spells_parsed = json.load(open('data/spellCards.json'))
-
-def get_info_by_id(id, type):
-    if(type == "M"):
-        try:
-            card_info = monsters_parsed[id]
-            return card_info
-        except KeyError:
-            print("Not a valid ID, please try again")
-            return None
-
-    if(type == "S"):
-        try:
-            card_info = spells_parsed[id]
-            return card_info
-        except KeyError:
-            print("Not a valid ID, please try again")
-            return None
+# print(monsters_parsed)
 
 
 class MonsterCard(Card):
@@ -66,39 +50,49 @@ class MonsterStack(Stack):
 class SpellStack(Stack):
     school = ""
 
+# build monster column
+all_monsters = monsters_parsed.keys()
+level_one_monsters = []
+level_two_monsters = []
+level_three_monsters = []
+level_four_monsters = []
+level_five_monsters = []
+for monster in all_monsters:
+    if(monster.find("M1") > -1):
+        level_one_monsters.append(monster)
+    if(monster.find("M2") > -1):
+        level_two_monsters.append(monster)
+    if(monster.find("M3") > -1):
+        level_three_monsters.append(monster)
+    if(monster.find("M4") > -1):
+        level_four_monsters.append(monster)
+    if(monster.find("M5") > -1):
+        level_five_monsters.append(monster)
+
+level_one_stack = Stack(level_one_monsters)
+level_two_stack = Stack(level_two_monsters)
+level_three_stack = Stack(level_three_monsters)
+level_four_stack = Stack(level_four_monsters)
+level_five_stack = Stack(level_five_monsters)
+
+monster_stacks = [level_one_stack, level_two_stack, level_three_stack, level_four_stack, level_five_stack]
+
+monster_grid = SpellGridColumn(monster_stacks)
+# monster_grid.column["R1"].shuffle()
+
+# shuffle 'em
+for i in range(5):
+    monster_grid.column["R" + str(i+1)].shuffle()
+
+
+
 # test out the thing:
 PrintThings.printWelcome()
-print("Enter q to quit")
-command = input("What would you like to do next? \n")
+# print("Enter q to quit")
+# command = input("What would you like to do next? \n")
+game = GameLoop()
+game.start_game()
 
-def handle_commands(command):
-    # check for what type of card it is.
-    view = re.search("view", command)
-    if(view is not None):
-        print("That's a view!")
-
-    # if M###, it's a monster card:
-    m = re.search("M\d\d\d", command)
-    card_check_type = ""
-
-    if(m is not None):
-        card_check_type = "M"
-
-    # if S###, it's a spell card:
-    s = re.search("S\d\d\d", command)
-    if(s is not None):
-        card_check_type = "S"
-
-    if(card_check_type is not ""):
-        print(get_info_by_id(command, card_check_type))
-    elif(command == "help" or command == "Help" or command == "h"):
-        print("Type q to quit \n")
-    else:
-        print("Command not recognized, please try again")
-
-while command != "q":
-    handle_commands(command)
-    command = input("What would you like to do next? \n")
 
 # users_id = input("ID of card you want to check out:")
 

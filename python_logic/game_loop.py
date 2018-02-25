@@ -4,25 +4,22 @@ Put the command line came loop in here
 
 import re
 
-import util_functions
+from util_functions import UtilFunctions as utils
 
-class game_loop:
+class GameLoop:
+    def __init__(self):
+        pass
+
     def start_game(self):
         print("Enter q to quit")
         command = input("What would you like to do next? \n")
+        self.handle_commands(command)
 
     def handle_commands(self, command):
-        """
-        The available commands include:
-            view [stuff]
-                stuff can be card_id, board, monsters, monster deck, status
-                (status is for state of the game: player life, etc)
-            play [spell]
-                name of spell to play
-
-        """
-        # check if it's a card search
-        # check what kind of card it is
+        # check for what type of card it is.
+        view = re.search("view", command)
+        if(view is not None):
+            print("That's a view!")
 
         # if M###, it's a monster card:
         m = re.search("M\d\d\d", command)
@@ -31,13 +28,23 @@ class game_loop:
         if(m is not None):
             card_check_type = "M"
 
-        # If S###, it's a spell card:
+        # if S###, it's a spell card:
         s = re.search("S\d\d\d", command)
         if(s is not None):
             card_check_type = "S"
 
-       # if(card_check_type is not ""):
-        #    print(get_info_by_id
+        if(card_check_type is not ""):
+            print(utils.get_info_by_id(self, command, card_check_type))
+        elif(command == "help" or command == "Help" or command == "h"):
+            print("Type q to quit \n")
+        else:
+            print("Command not recognized, please try again")
 
+        while command != "q":
+            # self.handle_commands(command)
+            command = input("What would you like to do next? \n")
+            self.handle_commands(command)
+        
+        quit()
 
 

@@ -11,11 +11,11 @@ monsters_parsed = json.load(open('data/monsterCards.json'))
 spells_parsed = json.load(open('data/spellCards.json'))
 
 
-class util_func:
+class UtilFunctions:
     # get card info by id:
-    def get_info_by_id(id, type):
+    def get_info_by_id(self, id, type):
         if(type == "M"):
-            try: 
+            try:
                 card_info = monsters_parsed[id]
                 return card_info
             except KeyError:
