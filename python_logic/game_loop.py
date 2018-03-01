@@ -5,9 +5,11 @@ Put the command line came loop in here
 import re
 
 from util_functions import UtilFunctions
+from printing import PrintThings
 
 class GameLoop:
     utils = UtilFunctions()
+    printer = PrintThings()
 
     def __init__(self):
         pass
@@ -24,7 +26,8 @@ class GameLoop:
         if(view):
             # strip off "view"
             id = command[5:]
-            print(self.utils.get_info_by_id(id))
+            card_info = self.utils.get_info_by_id(id)
+            self.printer.print_card_info(card_info)
         elif(command == "help" or command == "Help" or command == "h"):
             print("Type q to quit \n")
         else:

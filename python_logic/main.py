@@ -87,7 +87,8 @@ for i in range(5):
 
 
 # test out the thing:
-PrintThings.printWelcome()
+printer = PrintThings()
+printer.print_welcome()
 # print("Enter q to quit")
 # command = input("What would you like to do next? \n")
 game = GameLoop()
