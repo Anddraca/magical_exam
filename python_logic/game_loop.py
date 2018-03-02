@@ -27,7 +27,7 @@ class GameLoop:
             # strip off "view"
             id = command[5:]
             card_info = self.utils.get_info_by_id(id)
-            self.printer.print_card_info(card_info)
+            self.printer.print_monster_card_info(card_info)
         elif(command == "help" or command == "Help" or command == "h"):
             print("Type q to quit \n")
         else:
