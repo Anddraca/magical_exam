@@ -22,7 +22,7 @@ class PrintThings:
         self.wrapper.break_long_words = False
 
         print("#"*24)
-        print("#")
+        print("#" + " "*22 + "#")
         wrapped_card_name = self.wrapper.wrap(card_info['name'])
         for word in wrapped_card_name:
             print("# ", end="")
@@ -35,7 +35,7 @@ class PrintThings:
             else:
                 print(word + " #")
         # print("# " + card_info['name'])
-        print("#")
+        print("#" + " "*22 + "#")
         wrapped_card_text = self.wrapper.wrap(card_info['text'])
         for word in wrapped_card_text:
             print("# ", end="")
@@ -48,8 +48,7 @@ class PrintThings:
             else:
                 print(word + " #")
         # print("# " + card_info['text'])
-        print("#")
-        print("# " + card_info['attack'] + "      " + card_info['hp'])
-        for i in range(24):
-            print("#", end='')
+        print("#" + " "*22 + "#")
+        print("#" + " "*4 + card_info['attack'] + " "*12 + card_info['hp'] + " "*4 + "#")
+        print("#"*24)
         print("\n")
