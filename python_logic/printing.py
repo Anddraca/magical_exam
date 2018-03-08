@@ -52,3 +52,23 @@ class PrintThings:
         print("#" + " "*4 + card_info['attack'] + " "*12 + card_info['hp'] + " "*4 + "#")
         print("#"*24)
         print("\n")
+
+    def print_board(self):
+        board_width = 101
+        cell_width = 24
+        # want: 
+        # pick some max length for the borders of the box
+        # figure out the length of the cards that are available (pass in a board state)
+        # figure out the length of an individual cell. calc the difference, fill in with blank spaces split on 
+        # either side of the name
+        print("#"*board_width)
+        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        print("#"*board_width)
+        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        print("#"*board_width)
+        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        print("#"*board_width)
+        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        print("#"*board_width)
+        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        print("#"*board_width)

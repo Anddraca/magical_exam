@@ -22,12 +22,15 @@ class GameLoop:
     def handle_commands(self, command):
         # check for what type of card it is.
         view = re.search("view", command)
+        board = re.search("board", command)
 
         if(view):
             # strip off "view"
             id = command[5:]
             card_info = self.utils.get_info_by_id(id)
             self.printer.print_monster_card_info(card_info)
+        elif(board):
+            self.printer.print_board()
         elif(command == "help" or command == "Help" or command == "h"):
             print("Type q to quit \n")
         else:
