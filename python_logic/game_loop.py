@@ -7,15 +7,19 @@ import re
 from util_functions import UtilFunctions
 from printing import PrintThings
 from board import SpellBoard
+from update_state import UpdateState
 
 class GameLoop:
     utils = UtilFunctions()
     printer = PrintThings()
+    update_state = UpdateState()
 
     def __init__(self):
         spell_board = SpellBoard()
         self.start_board = spell_board.starting_board()
         self.board = spell_board.build_board()
+        self.available_board = spell_board.available_board(self.board)
+        self.user_board = spell_board.user_board()
 
     def start_game(self):
         print("Enter q to quit")
@@ -26,6 +30,7 @@ class GameLoop:
         # check for what type of card it is.
         view = re.search("view", command)
         board = re.search("board", command)
+        pick = re.search("pick", command)
 
         if(view):
             # strip off "view"
@@ -34,6 +39,10 @@ class GameLoop:
             self.printer.print_monster_card_info(card_info)
         elif(board):
             self.printer.print_board(self.board)
+        elif(pick):
+            position = command[5:]
+            new_board = self.update_state.process_pick(position, self.available_board, self.user_board, self.board)
+            print(new_board)
         elif(command == "help" or command == "Help" or command == "h"):
             print("Type q to quit \n")
         else:
