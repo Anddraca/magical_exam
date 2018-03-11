@@ -53,22 +53,166 @@ class PrintThings:
         print("#"*24)
         print("\n")
 
-    def print_board(self):
+    def build_rows(self, columns):
+        # arrays_of_spells will be an array of arrays
+        rows = {}
+        cell_width = 24
+        title = "#"
+        L5 = "#"
+        L4 = "#"
+        L3 = "#"
+        L2 = "#"
+        L1 = "#"
+        
+        for cat in columns:
+            # title
+            add_to_row = ""
+            name = cat.upper()
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+            
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+            
+            title = title + add_to_row
+        
+        for cat in columns:
+            # L5
+            add_to_row = ""
+            name = columns[cat]['L5'][0]
+            
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+            
+            
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+            
+            L5 = L5 + add_to_row
+        
+        for cat in columns:
+            # L4
+            add_to_row = ""
+            name = columns[cat]['L4'][0]
+            
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+            
+            
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+            
+            L4 = L4 + add_to_row
+        
+        for cat in columns:
+            # L3
+            add_to_row = ""
+            name = columns[cat]['L3'][0]
+            
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+            
+            
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+            
+            L3 = L3 + add_to_row
+            
+        for cat in columns:
+            # L2
+            add_to_row = ""
+            name = columns[cat]['L2'][0]
+            
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+            
+            
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+            
+            L2 = L2 + add_to_row
+        
+        for cat in columns:
+            # L1
+            add_to_row = ""
+            name = columns[cat]['L1'][0]
+            
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+            
+            
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+            
+            L1 = L1 + add_to_row
+        
+        rows['title'] = title
+        rows['L5'] = L5
+        rows['L4'] = L4
+        rows['L3'] = L3
+        rows['L2'] = L2
+        rows['L1'] = L1
+        return rows
+
+    def print_board(self, board):
         board_width = 101
         cell_width = 24
-        # want: 
-        # pick some max length for the borders of the box
+        print(board)
+        print("#"*board_width)
+        
+        all_rows = self.build_rows(board)
+        
+        print(all_rows['title'])
+        print("#"*board_width)
+        print(all_rows['L5'])
+        print("#"*board_width)
+        print(all_rows['L4'])
+        print("#"*board_width)
+        print(all_rows['L3'])
+        print("#"*board_width)
+        print(all_rows['L2'])
+        print("#"*board_width)
+        print(all_rows['L1'])
+        print("#"*board_width)
+        
+        # for column in board.keys():
+        #     # L5's:
+        #     L5 = column['L5'][0]
+        #     L4 = column['L4'][0]
+        #     L3 = column['L3'][0]
+        #     L2 = column['L2'][0]
+
+        # build each cell
+        
+        # length_of_name = len(name)
+
+        
         # figure out the length of the cards that are available (pass in a board state)
-        # figure out the length of an individual cell. calc the difference, fill in with blank spaces split on 
-        # either side of the name
-        print("#"*board_width)
-        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
-        print("#"*board_width)
-        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
-        print("#"*board_width)
-        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
-        print("#"*board_width)
-        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
-        print("#"*board_width)
-        print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
-        print("#"*board_width)
+        # print("#"*board_width)
+        # print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        # print("#"*board_width)
+        # print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        # print("#"*board_width)
+        # print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        # print("#"*board_width)
+        # print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")
+        # print("#"*board_width)
+        # print("#" + " "*cell_width +  "#" + " "*cell_width + "#" + " "*cell_width + "#" + " "*cell_width + "#")

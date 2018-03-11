@@ -14,6 +14,7 @@ from game_loop import GameLoop
 from printing import PrintThings
 from card import Card
 from spell_grid import Stack, SpellGridColumn
+from board import SpellBoard
 
 # get the card data
 monsters_parsed = json.load(open('data/monsterCards.json'))
@@ -37,7 +38,7 @@ class AvailableCards:
     cards_available = []
 
     def add_to_available_cards(self, stack_pos):
-        # 
+        #
         pass
 
     def list_available_cards(self):
@@ -85,10 +86,12 @@ for i in range(5):
     monster_grid.column["R" + str(i+1)].shuffle()
 
 
-
-# test out the thing:
 printer = PrintThings()
 printer.print_welcome()
+spell_board = SpellBoard()
+board = spell_board.starting_board()
+printer.print_board(board)
+
 # print("Enter q to quit")
 # command = input("What would you like to do next? \n")
 game = GameLoop()

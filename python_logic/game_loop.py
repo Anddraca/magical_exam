@@ -6,13 +6,16 @@ import re
 
 from util_functions import UtilFunctions
 from printing import PrintThings
+from board import SpellBoard
 
 class GameLoop:
     utils = UtilFunctions()
     printer = PrintThings()
 
     def __init__(self):
-        pass
+        spell_board = SpellBoard()
+        self.start_board = spell_board.starting_board()
+        self.board = spell_board.build_board()
 
     def start_game(self):
         print("Enter q to quit")
@@ -30,7 +33,7 @@ class GameLoop:
             card_info = self.utils.get_info_by_id(id)
             self.printer.print_monster_card_info(card_info)
         elif(board):
-            self.printer.print_board()
+            self.printer.print_board(self.board)
         elif(command == "help" or command == "Help" or command == "h"):
             print("Type q to quit \n")
         else:
