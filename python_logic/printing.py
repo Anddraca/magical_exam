@@ -53,6 +53,9 @@ class PrintThings:
         print("#"*24)
         print("\n")
 
+    def make_rows(self, arr_of_cards):
+
+
     def build_rows(self, board):
         # arrays_of_spells will be an array of arrays
         rows = {}
@@ -80,23 +83,29 @@ class PrintThings:
 
             title = title + add_to_row
 
+        counter = 0
         for entry in board:
             # L5
-            add_to_row = ""
-            if(entry.find("5") > 0):
+            this_row = ""
+            while(counter < 4):
+               add_to_row = ""
+
                 name = board[entry][0]
 
-            length_of_name = len(name)
-            blanks = cell_width - length_of_name
-            buff = blanks//2
-            add_buff = 0
-            if(buff + length_of_name + buff < cell_width):
-                add_buff = cell_width - (buff*2 + length_of_name)
+                length_of_name = len(name)
+                blanks = cell_width - length_of_name
+                buff = blanks//2
+                add_buff = 0
+                if(buff + length_of_name + buff < cell_width):
+                    add_buff = cell_width - (buff*2 + length_of_name)
 
 
-            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+                add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+                counter += 1
+            else:
+                counter = 0
 
-            L5 = L5 + add_to_row
+            this_row = this_row + add_to_row
 
         for cat in board:
             # L4
