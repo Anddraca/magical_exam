@@ -54,6 +54,7 @@ class PrintThings:
         print("\n")
 
     def make_rows(self, arr_of_cards):
+        rows = {[],[],[],[],[]}
 
 
     def build_rows(self, board):
