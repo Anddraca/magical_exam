@@ -24,8 +24,10 @@ class PrintThings:
         print("#"*24)
         print("#" + " "*22 + "#")
         wrapped_card_name = self.wrapper.wrap(card_info['name'])
+
         for word in wrapped_card_name:
-            print("# ", end="")
+            print("# ",  end="")
+            # print(word)
             if(len(word) < self.wrapper.width):
                 dif = self.wrapper.width - len(word)
                 print(word, end="")
@@ -89,7 +91,7 @@ class PrintThings:
             # L5
             this_row = ""
             while(counter < 4):
-               add_to_row = ""
+                add_to_row = ""
 
                 name = board[entry][0]
 
