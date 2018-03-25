@@ -60,7 +60,6 @@ class PrintThings:
 
 
     def build_rows(self, board):
-        # arrays_of_spells will be an array of arrays
         rows = {}
         cell_width = 24
         title = "#"
@@ -172,6 +171,7 @@ class PrintThings:
     def print_board(self, board):
         board_width = 101
         cell_width = 24
+        print("AVAILABLE BOARD")
         print(board)
         print("#"*board_width)
 
