@@ -38,7 +38,7 @@ class GameLoop:
             card_info = self.utils.get_info_by_id(id)
             self.printer.print_monster_card_info(card_info)
         elif(board):
-            self.printer.print_board(self.board)
+            self.printer.print_board(self.start_board)
         elif(pick):
             position = command[5:]
             new_board = self.update_state.process_pick(position, self.available_board, self.user_board, self.board)

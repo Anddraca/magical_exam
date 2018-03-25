@@ -86,35 +86,10 @@ class PrintThings:
 
             title = title + add_to_row
 
-        counter = 0
-        for entry in board:
-            # L5
-            this_row = ""
-            while(counter < 4):
-                add_to_row = ""
-
-                name = board[entry][0]
-
-                length_of_name = len(name)
-                blanks = cell_width - length_of_name
-                buff = blanks//2
-                add_buff = 0
-                if(buff + length_of_name + buff < cell_width):
-                    add_buff = cell_width - (buff*2 + length_of_name)
-
-
-                add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
-                counter += 1
-            else:
-                counter = 0
-
-            this_row = this_row + add_to_row
-
-        for cat in board:
-            # L4
+        L5s = ['L5D', 'L5C', 'L5S', 'L5I']
+        for cat in L5s:
             add_to_row = ""
             name = board[cat][0]
-
             length_of_name = len(name)
             blanks = cell_width - length_of_name
             buff = blanks//2
@@ -122,62 +97,70 @@ class PrintThings:
             if(buff + length_of_name + buff < cell_width):
                 add_buff = cell_width - (buff*2 + length_of_name)
 
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+
+            L5 = L5 + add_to_row
+        
+        L4s = ['L4D', 'L4C', 'L4S', 'L4I']
+        for cat in L4s:
+            add_to_row = ""
+            name = board[cat][0]
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
 
             add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
 
             L4 = L4 + add_to_row
 
-        # for cat in columns:
-        #    # L3
-        #    add_to_row = ""
-        #    name = columns['L3'][0]
-        #
-        #    length_of_name = len(name)
-        #    blanks = cell_width - length_of_name
-        #    buff = blanks//2
-        #    add_buff = 0
-        #    if(buff + length_of_name + buff < cell_width):
-        #        add_buff = cell_width - (buff*2 + length_of_name)
-        #
-        #
-        #    add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
-        #
-        #    L3 = L3 + add_to_row
-        #
-        # for cat in columns:
-        #    # L2
-        #    add_to_row = ""
-        #    name = columns['L2'][0]
-        #
-        #    length_of_name = len(name)
-        #    blanks = cell_width - length_of_name
-        #    buff = blanks//2
-        #    add_buff = 0
-        #    if(buff + length_of_name + buff < cell_width):
-        #        add_buff = cell_width - (buff*2 + length_of_name)
-#
-#
-#            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
-#
-#            L2 = L2 + add_to_row
-#
-#        for cat in columns:
-#            # L1
-#            add_to_row = ""
-#            name = columns['L1'][0]
-#
-#            length_of_name = len(name)
-#            blanks = cell_width - length_of_name
-#            buff = blanks//2
-#            add_buff = 0
-#            if(buff + length_of_name + buff < cell_width):
-#                add_buff = cell_width - (buff*2 + length_of_name)
-#
-#
-#            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
-#
-#            L1 = L1 + add_to_row
+        L3s = ['L3D', 'L3C', 'L3S', 'L3I']
+        for cat in L3s:
+            add_to_row = ""
+            name = board[cat][0]
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
 
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+
+            L3 = L3 + add_to_row
+        
+        L2s = ['L2D', 'L2C', 'L2S', 'L2I']
+        for cat in L2s:
+            add_to_row = ""
+            name = board[cat][0]
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+
+            L2 = L2 + add_to_row
+
+        L1s = ['L1D', 'L1C', 'L1S', 'L1I']
+        for cat in L1s:
+            add_to_row = ""
+            name = board[cat][0]
+            length_of_name = len(name)
+            blanks = cell_width - length_of_name
+            buff = blanks//2
+            add_buff = 0
+            if(buff + length_of_name + buff < cell_width):
+                add_buff = cell_width - (buff*2 + length_of_name)
+
+            add_to_row = " "*buff + name + " "*(buff + add_buff) + "#"
+
+            L1 = L1 + add_to_row
+        
         rows['title'] = title
         rows['L5'] = L5
         rows['L4'] = L4
@@ -193,7 +176,7 @@ class PrintThings:
         print("#"*board_width)
 
         all_rows = self.build_rows(board)
-
+        # print(board['L5D'][0])
         print(all_rows['title'])
         print("#"*board_width)
         print(all_rows['L5'])
