@@ -69,3 +69,8 @@ class UtilFunctions:
                 return spells_parsed["illusion"]["L5"][id]
         else:
             return "ID not found, please try again"
+
+    def get_info_by_name(self, name):
+        # loop over the names in name_map in spells_parsed and see if there are
+        # any matches with re.search
+        pass

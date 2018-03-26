@@ -200,7 +200,7 @@
 			"L2I3": {
 				"name": "Haste"
 			},
-			"L1I4": {
+			"L2I4": {
 				"name": "Melt"
 			}
 		},
@@ -228,5 +228,67 @@
 				"name": "Banish"
 			}
 		}
+	},
+	"name_map": {
+		"Bruise":"L1D1",
+		"Slash":"L1D2",
+		"Bolt":"L1D3",
+		"Magic Missle":"L1D4",
+		"Cone of Cold":"L1D5",
+		"Poison":"L2D1",
+		"Harm":"L2D2",
+		"Decay":"L2D3",
+		"Shock":"L2D4",
+		"Lightning":"L3D1",
+		"Fireball":"L3D2",
+		"Stone Storm":"L3D3",
+		"Disk of Destruction":"L4D1",
+		"Conflagration":"L4D2",
+		"Meteor":"L5D1",
+		"Rusty Turret":"L1C1",
+		"Anvil":"L1C2",
+		"Sentry Bot":"L1C3",
+		"Internal Combustion":"L1C4",
+		"Malfunctioning Guardian":"L1C5",
+		"Automaton":"L2C1",
+		"Summon Sword":"L2C2",
+		"Quick Shot":"L2C3",
+		"Empty Hull":"L2C4",
+		"Repair Bay":"L3C1",
+		"Ray of Destruction":"L3C2",
+		"Perimeter Patrol":"L3C3",
+		"Dome":"L4C1",
+		"Factory":"L4C2",
+		"Engine of Destruction":"L5C1",
+		"Summon Rats":"L1S1",
+		"Summon Imp":"L1S2",
+		"Summon Vines":"L1S3",
+		"Summon Guard Dog":"L1S4",
+		"Summon Eagle":"L1S5",
+		"Summon Light Elemental":"L2S1",
+		"Summon Spiders":"L2S2",
+		"Wall":"L2S3",
+		"Summon Warden":"L2S4",
+		"Bulwark":"L3S1",
+		"Summon Familiar":"L3S2",
+		"Summon Gryphon":"L3S3",
+		"Summon Champion":"L4S1",
+		"Summon Giant":"L4S2",
+		"Summon Dragon":"L5S1",
+		"Levitate":"L1I1",
+		"Hunger":"L1I2",
+		"Whispers":"L1I3",
+		"Freeze":"L1I4",
+		"Tangling Web":"L1I5",
+		"Confusion":"L2I1",
+		"Enfeeble":"L2I2",
+		"Haste":"L2I3",
+		"Melt":"L2I4",
+		"Sleep":"L3I1",
+		"Gigantism":"L3I2",
+		"Rage":"L3I3",
+		"Displacement":"L4I1",
+		"Flash":"L4I2",
+		"Banish":"L5I1"
 	}
 }

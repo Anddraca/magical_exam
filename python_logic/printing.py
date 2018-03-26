@@ -55,6 +55,15 @@ class PrintThings:
         print("#"*24)
         print("\n")
 
+    def print_spell_card_info(self, card_info):
+        # same defaults from above
+        self.wrapper.width = 20
+        self.wrapper.break_long_words = False
+
+        print("#"*24)
+        print("#" + " "*22 + "#")
+        wrapped_card_name = self.wrapper(card_info['name'])
+
     def make_rows(self, arr_of_cards):
         rows = {[],[],[],[],[]}
 
