@@ -62,7 +62,8 @@ class PrintThings:
 
         print("#"*24)
         print("#" + " "*22 + "#")
-        wrapped_card_name = self.wrapper(card_info['name'])
+        wrapped_card_name = self.wrapper.wrap(card_info['name'])
+        print(wrapped_card_name)
 
     def make_rows(self, arr_of_cards):
         rows = {[],[],[],[],[]}

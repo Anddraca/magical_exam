@@ -52,11 +52,12 @@ class SpellBoard:
                   "L5I": [], "L4I": [], "L3I": [], "L2I": [], "L1I": []}
 
         for cat in spells_parsed.keys():
-            first_letter = cat[0].upper()
-            for level in spells_parsed[cat].keys():
-                entry = level + first_letter
-                for spell in spells_parsed[cat][level].keys():
-                    board[entry].append(spells_parsed[cat][level][spell]
+            if(cat != 'name_map'):
+                first_letter = cat[0].upper()
+                for level in spells_parsed[cat].keys():
+                    entry = level + first_letter
+                    for spell in spells_parsed[cat][level].keys():
+                        board[entry].append(spells_parsed[cat][level][spell]
                                         ['name'])
 
         return board

@@ -13,3 +13,5 @@
     * just make the name the ID, adjust from there. It's just a datastore, and the names will be unique (i.e. no two cards with the same name)
 
 * figure out what goes where....
+
+* Combine the data files. make it nice and flat where possible, with a mapping file in there somewhere. 
