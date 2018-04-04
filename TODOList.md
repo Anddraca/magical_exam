@@ -14,4 +14,7 @@
 
 * figure out what goes where....
 
-* Combine the data files. make it nice and flat where possible, with a mapping file in there somewhere. 
+* Combine the data files. make it nice and flat where possible, with a mapping file in there somewhere.
+  * or....screw that
+  * in UTIL FUNCTIONS build an object that maps "name":"id" for spell cards, then build an RE that matches against all the keys
+  * of that object. if there's a match, go by id to get the info, send that to the printing function. 
